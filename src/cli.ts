@@ -4,7 +4,7 @@ import { Command } from "commander";
 import path from "path";
 import fs from "fs-extra";
 import chalk from "chalk";
-import { TEMPLATES, COMPONENTS_LIST, type ComponentName } from "./templates";
+import { TEMPLATES, COMPONENTS_LIST, DEPENDENCIES, type ComponentName } from "./templates";
 import {
   installDependencies,
   isDependencyInstalled,
@@ -54,8 +54,19 @@ program
       if (missingDeps.length > 0) {
         console.log(chalk.yellow(`\n⚙️  Installing required dependencies...\n`));
         await installDependencies(cwd, missingDeps);
-      } else {
         console.log(chalk.gray(`✓ All required dependencies already installed`));
+      }
+
+      const componentDeps = DEPENDENCIES[componentName] || [];
+      if (componentDeps.length > 0) {
+        const missingComponentDeps = componentDeps.filter(
+          (dep) => !isDependencyInstalled(cwd, dep)
+        );
+
+        if (missingComponentDeps.length > 0) {
+          console.log(chalk.yellow(`\n⚙️  Installing ${componentName} dependencies: ${missingComponentDeps.join(", ")}...\n`));
+          await installDependencies(cwd, missingComponentDeps);
+        }
       }
 
       const componentDir = getComponentsDir(cwd);

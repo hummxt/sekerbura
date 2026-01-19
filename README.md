@@ -11,7 +11,7 @@ npm install -g sekerbura
 Or use directly with npx:
 
 ```bash
-npx sekerbura add button
+npm sekerbura add button
 ```
 
 ## Quick Start
@@ -19,7 +19,7 @@ npx sekerbura add button
 ### 1. Initialize sekerbura (Optional)
 
 ```bash
-npx sekerbura init
+npm sekerbura init
 ```
 
 This will:
@@ -29,8 +29,8 @@ This will:
 ### 2. Add Components
 
 ```bash
-npx sekerbura add button
-npx sekerbura add card
+npm sekerbura add button
+npm sekerbura add card
 ```
 
 This will:
@@ -67,7 +67,7 @@ export default function App() {
 View all available components:
 
 ```bash
-npx sekerbura list
+npm sekerbura list
 ```
 
 ## CLI Commands
@@ -77,8 +77,8 @@ npx sekerbura list
 Add a component to your project.
 
 ```bash
-npx sekerbura add button
-npx sekerbura add card
+npm sekerbura add button
+npm sekerbura add card
 ```
 
 ### `npx sekerbura list`
@@ -86,7 +86,7 @@ npx sekerbura add card
 List all available components.
 
 ```bash
-npx sekerbura list
+npm sekerbura list
 ```
 
 ### `npx sekerbura init`
@@ -94,7 +94,7 @@ npx sekerbura list
 Initialize sekerbura in your project (creates utils, installs dependencies).
 
 ```bash
-npx sekerbura init
+npm sekerbura init
 ```
 
 ## Project Structure

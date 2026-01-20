@@ -1,6 +1,8 @@
 # sekerbura - Component CLI Library
 
-A professional, self-contained CLI tool for distributing minimalist React components. Similar to Shadcn/ui but built from scratch with your own branding.
+A professional, self-contained CLI tool for distributing minimalist React components.
+
+https://sekerbura.vercel.app/
 
 ## Installation
 

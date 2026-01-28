@@ -41,9 +41,15 @@ program
         if (missingDeps.length > 0) {
             console.log(chalk_1.default.yellow(`\n⚙️  Installing required dependencies...\n`));
             await (0, install_deps_1.installDependencies)(cwd, missingDeps);
-        }
-        else {
             console.log(chalk_1.default.gray(`✓ All required dependencies already installed`));
+        }
+        const componentDeps = templates_1.DEPENDENCIES[componentName] || [];
+        if (componentDeps.length > 0) {
+            const missingComponentDeps = componentDeps.filter((dep) => !(0, install_deps_1.isDependencyInstalled)(cwd, dep));
+            if (missingComponentDeps.length > 0) {
+                console.log(chalk_1.default.yellow(`\n⚙️  Installing ${componentName} dependencies: ${missingComponentDeps.join(", ")}...\n`));
+                await (0, install_deps_1.installDependencies)(cwd, missingComponentDeps);
+            }
         }
         const componentDir = (0, detect_framework_1.getComponentsDir)(cwd);
         const componentPath = path_1.default.join(componentDir, `${componentName}.tsx`);

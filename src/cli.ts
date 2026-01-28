@@ -25,9 +25,11 @@ program
   .alias("a")
   .description("Add a component to your project")
   .action(async (component: string) => {
-    const componentName = component.toLowerCase() as ComponentName;
+    const componentName = COMPONENTS_LIST.find(
+      (c) => c.toLowerCase() === component.toLowerCase()
+    );
 
-    if (!COMPONENTS_LIST.includes(componentName)) {
+    if (!componentName) {
       console.log(
         chalk.red(`✗ Component "${component}" not found.\n`)
       );

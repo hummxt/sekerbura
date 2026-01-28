@@ -42,7 +42,8 @@
     "clsx": "^2.1.1",
     "commander": "^11.1.0",
     "fs-extra": "^11.3.3",
-    "tailwind-merge": "^3.4.0"
+    "tailwind-merge": "^3.4.0",
+    "vaul": "^1.1.2"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",

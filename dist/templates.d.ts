@@ -30,7 +30,6 @@ export declare const TEMPLATES: {
     collapsible: string;
     breadcrumb: string;
     contextMenu: string;
-    drawer: string;
     toast: string;
     carousel: string;
     calendar: string;
@@ -43,6 +42,7 @@ export declare const TEMPLATES: {
     sheet: string;
     scrollArea: string;
     aspectRatio: string;
+    drawer: string;
 };
 export declare const DEPENDENCIES: Record<ComponentName, string[]>;
 export type ComponentName = keyof typeof TEMPLATES;

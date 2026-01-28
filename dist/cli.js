@@ -22,8 +22,8 @@ program
     .alias("a")
     .description("Add a component to your project")
     .action(async (component) => {
-    const componentName = component.toLowerCase();
-    if (!templates_1.COMPONENTS_LIST.includes(componentName)) {
+    const componentName = templates_1.COMPONENTS_LIST.find((c) => c.toLowerCase() === component.toLowerCase());
+    if (!componentName) {
         console.log(chalk_1.default.red(`✗ Component "${component}" not found.\n`));
         console.log(chalk_1.default.gray(`Available components: ${templates_1.COMPONENTS_LIST.join(", ")}`));
         process.exit(1);

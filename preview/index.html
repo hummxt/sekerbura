@@ -150,23 +150,18 @@
 
     <!-- Hero Section -->
     <section class="relative pt-32 pb-40 overflow-hidden">
-        <div class="container mx-auto px-4 text-center max-w-4xl">
-            <div class="inline-flex items-center rounded-full border border-claude/20 bg-claude/5 px-4 py-1.5 text-sm font-medium text-claude mb-10 animate-fade-in opacity-0"
-                style="animation-delay: 0.1s;">
-                <span class="flex h-1.5 w-1.5 rounded-full bg-claude mr-2"></span>
-                v1.0.0 Now Available
-            </div>
+        <div class="container mx-auto px-4 text-center max-w-7xl">
 
-            <h1 class="text-6xl md:text-8xl font-medium tracking-tight mb-8 animate-slide-up opacity-0 leading-[1.1]"
+            <h1 class="text-4xl md:text-7xl font-medium tracking-tight mb-8 animate-slide-up opacity-0 leading-[1.1]"
                 style="animation-delay: 0.2s; color: #D97757;">
-                Build your library.<br />
-                <span class="text-zinc-900 opacity-90 italics">Own your code.</span>
+                My UI Component Collection.<br />
+                <span class="text-7xl md:text-8xl text-zinc-900 opacity-90 italics whitespace-nowrap">I did it because I
+                    was bored.</span>
             </h1>
 
             <p class="mt-6 text-xl md:text-2xl text-zinc-500 max-w-2xl mx-auto mb-12 animate-slide-up opacity-0 font-light leading-relaxed"
                 style="animation-delay: 0.3s;">
-                Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable.
-                Open Source.
+                A personal collection of UI components I've built and use in my projects.
             </p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up opacity-0"
@@ -1551,7 +1546,7 @@
 
         const toggleBtns = document.querySelectorAll('[onclick*="toggle"]');
         document.querySelectorAll('button').forEach(btn => {
-            if (btn.innerHTML.includes('path d="M12 12')) {  
+            if (btn.innerHTML.includes('path d="M12 12')) {
                 btn.addEventListener('click', function () {
                     const isStateOn = this.getAttribute('data-state') === 'on';
                     this.setAttribute('data-state', isStateOn ? 'off' : 'on');

@@ -1,0 +1,65 @@
+{
+  "name": "sekerbura",
+  "version": "1.0.0",
+  "description": "sekerbura - A custom component library CLI. Add beautiful, minimalist components to your project with a single command.",
+  "author": "Hummat Azim",
+  "license": "MIT",
+  "main": "./dist/cli.js",
+  "types": "./dist/cli.d.ts",
+  "bin": {
+    "sekerbura": "dist/cli.js"
+  },
+  "exports": {
+    "./button": "./dist/components/button.js",
+    "./card": "./dist/components/card.js",
+    "./input": "./dist/components/input.js",
+    "./textarea": "./dist/components/textarea.js",
+    "./select": "./dist/components/select.js",
+    "./badge": "./dist/components/badge.js",
+    "./alert": "./dist/components/alert.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ui",
+    "components",
+    "cli",
+    "react",
+    "typescript",
+    "tailwind"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.3.3",
+    "tailwind-merge": "^3.4.0",
+    "vaul": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hummxt/sekerbura.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hummxt/sekerbura/issues"
+  },
+  "homepage": "https://github.com/hummxt/sekerbura#readme"
+}

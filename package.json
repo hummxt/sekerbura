@@ -1,6 +1,6 @@
 {
   "name": "sekerbura",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "sekerbura - A custom component library CLI. Add beautiful, minimalist components to your project with a single command.",
   "author": "Hummat Azim",
   "license": "MIT",
@@ -37,6 +37,7 @@
     "tailwind"
   ],
   "dependencies": {
+    "@radix-ui/react-scroll-area": "^1.2.10",
     "chalk": "^4.1.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

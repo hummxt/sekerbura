@@ -65,6 +65,38 @@ export default function App() {
 - **switch** - Toggle switch
 - **label** - Standard accessible label
 - **skeleton** - Loading placeholder animation
+- **accordion** - Interactive accordion with smooth transitions
+- **dialog** - Modal dialog for focused interaction
+- **toggle** - Two-state interactive button
+- **slider** - Range selection control
+- **radioGroup** - Set of checkable buttons for single selection
+- **alertDialog** - Modal for critical confirmation or information
+- **tabs** - Tabbed interface for content organization
+- **popover** - Content wrapper that appears over other elements
+- **hoverCard** - Informational card triggered on hover
+- **progress** - Visual indicator of task completion
+- **tooltip** - Brief description triggered on hover
+- **separator** - Visual line for content division
+- **table** - Structured data display with headers and rows
+- **dropdownMenu** - Contextual menu for actions or navigation
+- **menubar** - Persistent horizontal menu
+- **pagination** - Navigation for multi-page content
+- **command** - Command menu with search and keyboard shortcuts
+- **collapsible** - Content area that can be expanded or collapsed
+- **breadcrumb** - Path navigation indicator
+- **contextMenu** - Right-click menu for local actions
+- **toast** - Actionable notifications
+- **carousel** - Horizontal scrolling content slider
+- **calendar** - Interactive date picker
+- **timeline** - Vertical visual representation of events
+- **charts** - Data visualization components
+- **form** - Form management with validation
+- **combobox** - Searchable select component
+- **navigationMenu** - Main navigation menu with dropdowns
+- **sheet** - Slide-out panel for supplementary content
+- **scrollArea** - Custom styled scrollable area
+- **aspectRatio** - Container with fixed aspect ratio
+- **drawer** - Bottom-anchored sliding panel
 
 View all available components:
 
